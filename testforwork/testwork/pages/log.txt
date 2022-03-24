@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.10.2, pytest-7.0.1, pluggy-1.0.0
+rootdir: /Users/alexwell/PycharmProjects/testforwork
+collected 2753 items
+
+test_main.py ....................
+quit browser..
+
+
+=============================== warnings summary ===============================
+test_main.py: 21 warnings
+  /Users/alexwell/PycharmProjects/testforwork/conftest.py:11: DeprecationWarning: use options instead of chrome_options
+    browser = webdriver.Chrome(chrome_options=options)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! KeyboardInterrupt !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py:705: KeyboardInterrupt
+(to show a full traceback on KeyboardInterrupt use --full-trace)
+================= 20 passed, 21 warnings in 254.42s (0:04:14) ==================
