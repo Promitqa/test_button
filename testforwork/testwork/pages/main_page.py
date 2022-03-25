@@ -1,8 +1,17 @@
+from selenium_env.bin import pytest
 from testwork.pages.base_page import BasePage
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
+
+import re
 
 
+# def get_urls():
+#     urls = re.findall(r'[>"]\s*((?:https?:\/\/|ftps?:\/\/|www\.)[^<"]*?)\s*["<]',
+#                       open('/Users/alexwell/Downloads/spb.restate.ru.xml').read())
+#     return urls
+#
+#
+# @pytest.mark.parametrize('link', get_urls())
 class MainPage(BasePage):
     def find_element_button(self):
         button = self.browser.find_element(By.ID, "recall_tr")
